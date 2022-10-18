@@ -86,6 +86,8 @@ img, figure{
 .logo img{
     width: 5rem;
     padding: 1rem;
+    border-radius: 50%;
+
 
 }
  .menu{
@@ -108,7 +110,7 @@ img, figure{
    
     color:black;
      text-decoration:none; 
-     padding:1em 1em; 
+     padding:0 0; 
      /*padding:20px 32px;*/ 
      display:block;  
      border-left: 1px solid rgb(2, 2, 2);
@@ -123,7 +125,7 @@ img, figure{
    } 
 .menu li ul{
     display: none;
-    position:absolute;
+    position:relative;
 }
 
 .menus li:hover > ul { /*cuando pasamos el cursor por encima del elemento principal,muestra en columnas los sub-elementos*/ 
@@ -134,7 +136,7 @@ img, figure{
     position:relative; /*por defecto*/ 
    }
     .menus li ul li ul { /*entre sub-menús*/ 
-       right:-140px; 
+       right:140px; 
        top:0px;
    }
 
@@ -143,6 +145,8 @@ img, figure{
     /*width: 100%;*/
     background-color: rgb(0, 83, 79);
     padding: 0 0 5em;
+    width: 60%;
+    float: left;
 }
 .grid .h2{
     padding: 1em 0 1em;
@@ -151,6 +155,7 @@ img, figure{
     font-weight: 400;
     font-family: var(--tipo-principal);
     color: rgba(239, 254, 178);
+    width: 100%;
 }
 .grid .p{
     padding: 0 0 1em;
@@ -164,13 +169,25 @@ img, figure{
     align-items: center;
     justify-content:space-around;
     padding: 0 0 2em;
-    width: 100%;
+    width: 88%;
     /*background-color: aqua;*/
 }
 .celda{
     width: 50px;    
     text-align: center;
     font-size: 1em;
+}
+
+.video{
+    padding: 2em;
+    background: #90ee90;
+    float: right;
+    width: 40%;    
+    text-align: center;
+    font-size: 1em;
+    font-family: var(--tipo-principal);
+    min-height: 100%;
+
 }
 
 .contenido p{
@@ -184,14 +201,15 @@ img, figure{
     font-family: var(--tipo-principal);
     color: rgb(255, 255, 255); 
 }
-.celda .h2{
+.titulo .h3{
     text-align: center;
-    width: 100%;
     font-size: 1.5em;
-    font-weight: 300;
+    font-weight: 200;
     font-family: var(--tipo-principal);
     color: rgba(239, 254, 178);
-   
+    width: 100%;
+    padding: 1em 2em 1em 0;
+   min-height: 5%;
 }
 
 .celda .p{
@@ -201,26 +219,35 @@ img, figure{
     color: rgb(255, 255, 255);
 }
 .figure img {
-    width: 5 00px;
+    width: 500px;
     height: 200px;
     padding-bottom: 50%;
+    padding-top: 50%;
 }
 
 .navegacion{
    /*float: right;*/  
 }
 
-.celda .seccion{ 
-   vertical-align: top;
-    width: 80%;
+.seccion{ 
+    width: 100%;
+   
     /*background-color: rgb(104, 241, 235);*/
    
-    
 }
+
+.seccion .img{
+    width: 73%;
+    padding: 1em 0 2em 2em;
+    /*background-color: rgb(104, 241, 235);*/
+} 
+
+
+
 .pie{
     width: 100%;
     min-height: 3em;
-    background: rgb(144, 238, 144);
+    background: #8fbc8f;
     color: black;
 
     padding:1em 0 1em; 
