@@ -4,6 +4,8 @@ padding: 0;
 box-sizing: border-box;
 }
 
+/*La funcion de la hamburguesa*/
+
 :root {
     scroll-behavior: smooth;
     --surface-color: #fff;
@@ -16,6 +18,7 @@ li{
 
 body {
 font-family: 'Open Sans', sans-serif;
+font-family: 'Inter', sans-serif;
 font-family: 'Heebo', sans-serif;
 background-color: #fef8f8;
 
@@ -25,13 +28,14 @@ background-color: #fef8f8;
 .contenedor{
 width: 100%;
 max-width: 1200px;
-overflow: hidden;/* valor que define overflow es hidden, que hace que el navegador oculte todos los contenidos que se salen de la caja del elemento*/
+overflow: hidden;/* valor que define overflow es hidden, que hace que el 
+navegador oculte todos los contenidos que se salen de la caja del elemento*/
 margin: auto;
 padding: 60px 0;
 
 }
 
-/*Header*/
+/*Cabecera*/
 
 .cabecera {
     min-height: 100%;
@@ -44,6 +48,7 @@ padding: 60px 0;
 }
 
 .cabeza {
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     padding: 0;
     height: 100%;
@@ -52,6 +57,14 @@ padding: 60px 0;
     align-items: center;
     flex-direction: column;
     color: #fff;
+}
+
+.h3{
+    margin-top: 40px;
+    margin-right: 80px;
+    color: #fff;
+
+    float: right;
 }
 
  .logo{
@@ -63,7 +76,7 @@ padding: 60px 0;
 
 .hamburguesa{
    
-    position: fixed;
+    position: absolute;
     top: 30px;
     right: 30px;
     background-color: #fff;
@@ -103,6 +116,7 @@ padding: 60px 0;
 .titulo {
     font-size: 60px;
     margin-bottom: 15px;
+    
 
 }
 
@@ -113,14 +127,6 @@ padding: 60px 0;
 
 }
 
-
-.subtitulo2 {
-    text-align: center;
-    font-weight: 300;
-    color: #9f8ad0;
-    margin-bottom: 40px;
-    font-size: 40px;
-}
 
 /*Menu de navegacion*/
 
@@ -172,16 +178,7 @@ padding: 60px 0;
        top:0px;
 }
 
-/*Cards*/
-
-.h1{
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-.p{
-    text-align: center;
-}
+/*Tarjetas de info*/
 
 .cards {
     display: grid;
@@ -201,7 +198,18 @@ padding: 60px 0;
     overflow: hidden;
     text-decoration: none;
   }
-  
+
+  .h1{
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: #9f8ad0;
+    }
+
+.p{
+    text-align: center;
+}
+
   .card_imagen {      
     width: 100%;
     height: auto;
@@ -269,25 +277,21 @@ padding: 60px 0;
   .card__tagline {
     display: block;
     margin: 1em 0;
-    font-family: "MockFlowFont";  
-    font-size: .8em; 
+    font-family: "Inter", sans-serif;  
+    font-size: .7em; 
     color: #D7BDCA;  
-  }
-  
-  .card_estado {
-    font-size: .8em;
-    color: #D7BDCA;
   }
   
   .card_descripcion {
     padding: 0 2em 2em;
     margin: 0;
-    color: #eb529f;
-    font-family: "MockFlowFont";   
+    color: #000000;
+    font-family: "Inter", sans-serif;   
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
+    font-size: 0.9em;
   }    
 
 
@@ -305,6 +309,13 @@ padding: 60px 0;
 
 }
 
+.subtitulo2 {
+    text-align: center;
+    font-weight: 300;
+    color: #9f8ad0;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
 
 .img-galeria{
     object-fit: cover;
@@ -315,7 +326,7 @@ padding: 60px 0;
     cursor: pointer;
 }
 
-/*footer*/
+/*Pie de pagina*/
 
 .pie{
     width: 100%;
@@ -323,6 +334,7 @@ padding: 60px 0;
     background: #9f8ad0;
     padding-top: 40px;
     padding-bottom: 40px;
+    font-family: 'Heebo', sans-serif;
     
     text-align: center;
     position: relative;
@@ -396,7 +408,7 @@ padding: 60px 0;
 
 }
 
-/*Todas paginas*/
+/*Las secciones de las otras paginas menos la de Index*/
 .seccion{
     width: 100%;
     min-height: 80vh;
@@ -453,6 +465,7 @@ padding: 60px 0;
     font-size: 5em;
     line-height: 1em;
     color: rgba(0, 0, 0, .7);
+    padding-bottom: 0.3em;
     
 }
 
@@ -520,6 +533,7 @@ padding: 60px 0;
 }
 
 /*Media querys*/
+
 @media screen and (max-width:800px){
     .menu-navegacion{
         width: 50vh;
