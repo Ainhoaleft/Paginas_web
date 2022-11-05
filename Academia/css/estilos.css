@@ -63,6 +63,7 @@ padding: 60px 0;
     margin-top: 40px;
     margin-right: 80px;
     color: #fff;
+    font-family: 'Inter', sans-serif;
 
     float: right;
 }
@@ -111,6 +112,7 @@ padding: 60px 0;
 .menu-navegacion a{
     color: #fff;
     text-decoration: none;
+    font-family: 'Inter', sans-serif;
 }
 
 .titulo {
@@ -137,6 +139,7 @@ padding: 60px 0;
     background: #9f8ad0;
     padding: 0 0 0;
     border: 1px solid rgba(0, 0, 0, .2);
+    font-family: 'Inter', sans-serif;
   
    
 }
@@ -197,6 +200,7 @@ padding: 60px 0;
     border-radius: calc(var(--curve) * 1px);
     overflow: hidden;
     text-decoration: none;
+  
   }
 
   .h1{
@@ -208,6 +212,7 @@ padding: 60px 0;
 
 .p{
     text-align: center;
+    font-family: 'Inter', sans-serif;
 }
 
   .card_imagen {      
@@ -243,6 +248,7 @@ padding: 60px 0;
     transition: .2s ease-in-out;
   }
   
+  /*Para que no se suba la descripcion hacia la foto y no sea un desplegable*/
   .card__arc {
     width: 80px;
     height: 80px;
@@ -272,6 +278,7 @@ padding: 60px 0;
     font-size: 1em;
     margin: 0 0 .3em;
     color: #6A515E;
+    font-family: 'Open Sans', sans-serif;
   }
   
   .card__tagline {
@@ -315,6 +322,7 @@ padding: 60px 0;
     color: #9f8ad0;
     margin-bottom: 40px;
     font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .img-galeria{
@@ -412,6 +420,7 @@ padding: 60px 0;
 .seccion{
     width: 100%;
     min-height: 80vh;
+    font-family: 'Inter', sans-serif;
    
     margin: 1em 0;
     padding: 2em;
@@ -427,6 +436,7 @@ padding: 60px 0;
 .seccion .info{
     font-size: 1.2em;
     animation: aparecer1 2s ease 1 both;
+    
 }
 
 .seccion .ul{
@@ -460,7 +470,6 @@ padding: 60px 0;
 }
 
 .seccion .h2{
-    font-family: var(--tipo-titular);
     font-weight: 600;
     font-size: 5em;
     line-height: 1em;
@@ -470,7 +479,6 @@ padding: 60px 0;
 }
 
 .seccion .h3{
-    font-family: var(--tipo-titular);
     /*font-style: italic;*/
     font-size: 4em;
 }
@@ -515,7 +523,6 @@ padding: 60px 0;
 
     color: white;
     font-size: 1.8em;
-    font-family: var(--tipo-titular);
     font-style: italic;
 
     display: flex;
