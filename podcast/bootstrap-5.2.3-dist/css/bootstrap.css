@@ -94,7 +94,14 @@
  
 }
 
+.card {
+  transition: .5s;
 
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
 
 body {
   margin: 0;
