@@ -8,17 +8,18 @@
     <link href="../bootstrap-5.2.3-dist/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Libre+Caslon+Text&display=swap" rel="stylesheet">
     <title>Podcast Mare</title>
 </head>
 <body>
      <!-------- Navbar podcast----------->
-     <nav class="navbar navbar-expand-sm navbar-dark azul" id="navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="../img/logo.png" alt="" width="55">
-                
-            </a>
-            <h1>Onda Mare</h1>
+     <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a> 
+            <img src="../img/logo.png" alt="" width="55">
+            <h1 class="text-light m-3">Onda Mare</h1>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" controls="navbarText" expanded="false" label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,39 +27,64 @@
               <div class="collapse navbar-collapse justify-content-end" id="navbarText">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                     <li class="nav-item"><a class="nav-link active" current="page" href="#">Inicio</a></li>  
-                    <li class="nav-item"><a class="nav-link" href="#">Buscar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="formulario.html">Formulario</a></li>  
+                   
+                    <li class="nav-item"><a class="nav-link" href="#">Formulario</a></li>  
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" expanded="false">
                         Lista de programas
                       </a>
                       <ul class="dropdown-menu" labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="lista.html">Lista</a></li>
-                        <li><a class="dropdown-item" href="lista.html">Compra</a></li>
+                        <li><a class="dropdown-item" href="#list-compra">Programa 1</a></li>
+                        <li><a class="dropdown-item" href="#list-compra">Programa 2</a></li>
+                        <li><a class="dropdown-item" href="#list-compra">Programa 3</a></li>
+                        <li><a class="dropdown-item" href="#list-compra">Programa 4</a></li>
                         <li><hr class="dropdown-divider"></li>  
                       </ul>
                     </li>
                     
-                    <li class="nav-item"><a class="nav-link" href="login.html">Iniciar Sesión</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Iniciar Sesión</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
-
-    <!---------- Carrusel ------------------->
+    <div id="miCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicadores -->
+      <ol class="carousel-indicators">
+        <li data-target="#miCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#miCarousel" data-slide-to="1"></li>
+        <li data-target="#miCarousel" data-slide-to="2"></li>
+      </ol>
+    <!---------- Carrusel -->
     
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active imagen">
-          <img src="../img/1.png" class="d-block w-100" alt="...">
+        <div class="carousel-item active imagen"> 
+         <img src="../img/1.png" class="d-block w-100" alt="primera">           
+            <div class="carousel-caption d-flex align-items-start d-block">
+              <div class="p-5">
+              <h2>Noticias del Podcast del Mare Nostrum</h2>
+              <p>Mucho radio y musica en Mare Nostrum, siguenos</p>  
+              </div>          
+          </div>
         </div>
         <div class="carousel-item imagen">
-          <img src="../img/2.png" class="d-block w-100" alt="...">
+          <img src="../img/2.png" class="d-block w-100" alt="segunda">
+          <div class="carousel-caption d-flex align-items-start ">
+            <div class="p-5">
+            <h2>Noticias del Podcast del Mare Nostrum</h2>
+            <p>Mucho radio y musica en Mare Nostrum, siguenos</p>  
+            </div>          
+        </div>
         </div>
         <div class="carousel-item imagen">
-          <img src="../img/3.png" class="d-block w-100" alt="...">
+          <img src="../img/3.png" class="d-block w-100" alt="tercera">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="mb-5">
+            <h2>Noticias del Podcast del Mare Nostrum</h2>
+            <p>Mucho radio y musica en Mare Nostrum, siguenos</p>  
+            </div>          
+        </div>
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -70,7 +96,7 @@
         <span class="visually-hidden">Despúes</span>
       </button>
     </div>
- 
+
   
 <!---------- about section ------------------->
     <section id="about" class="about section-padding">
@@ -78,12 +104,12 @@
         <div class="row">
           <div class="col-lg-4 col-md-12 col-12">
             <div class="about-img">
-              <img src="../img/about.jpg" alt="" class="img-fluid">
+              <img src="../img/podcast.jpg" alt="" class="img-fluid">
             </div>
           </div>
           <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
             <div class="about text">
-              <h2>Podcast</h2>
+              <h2>Podcast Introducción</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae</p>
               <a href="#" class="btn btn-warning">Más contenido</a>
             </div>
@@ -108,10 +134,11 @@
         <div class="col-12 col-md-12 col-lg-4">
           <div class="card text-white text-center bg-dark pb-2">
             <div class="card-body">
-              <i class="bi bi-file-music"></i>
-                <h3 class="card-title">Spotify</h3>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolores ad quod animi ex delectus officiis libero, architecto veritatis ab, alias, quisquam commodi aut reiciendis! Earum praesentium laborum sit quo.</p>
-              <button class=" btn btn-warning text-dark">Leer más</button>
+              <i class="bi bi-broadcast"></i>
+                <h3 class="card-title">Radio</h3>
+                <p class="lead">La mejor radio</p>
+                <img src="/img/onda.jpg" class="img-fluid" alt="">
+              <button class=" btn btn-warning text-dark mt-2">Leer más</button>
             </div>
           </div>
         </div>
@@ -119,19 +146,21 @@
           <div class="card text-white text-center bg-dark pb-2">
             <div class="card-body">
               <i class="bi bi-file-music"></i>
-                <h3 class="card-title">Spotify</h3>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolores ad quod animi ex delectus officiis libero, architecto veritatis ab, alias, quisquam commodi aut reiciendis! Earum praesentium laborum sit quo.</p>
-              <button class=" btn btn-warning text-dark">Leer más</button>
+                <h3 class="card-title">Música</h3>
+                <p class="lead">La mejor musica</p>
+                <img src="/img/melody.jpg" class="img-fluid" alt="">
+              <button class=" btn btn-warning text-dark mt-2">Leer más</button>
             </div>
           </div>
         </div>
         <div class="col-12 col-md-12 col-lg-4">
           <div class="card text-white text-center bg-dark pb-2">
             <div class="card-body">
-              <i class="bi bi-file-music"></i>
-                <h3 class="card-title">Spotify</h3>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolores ad quod animi ex delectus officiis libero, architecto veritatis ab, alias, quisquam commodi aut reiciendis! Earum praesentium laborum sit quo.</p>
-              <button class=" btn btn-warning text-dark">Leer más</button>
+              <i class="bi bi-film"></i>
+                <h3 class="card-title">Series</h3>
+                <p class="lead">La mejores series</p>
+                <img src="/img/piano.jpg" class="img-fluid" alt="">
+              <button class=" btn btn-warning text-dark mt-2">Leer más</button>
             </div>
           </div>
         </div>
@@ -141,18 +170,17 @@
 
  <!---------- Carrusel ------------------->
  <div class="row mt-6">
-  <div class="col-sm-8 offset-md-2 bg-warning">
-    <h3 class="">Noticias</h3>
+  <div class="col-sm-8 offset-md-2 bg-info">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-         <p>La cumbre hispano-francesa de hoy no será solo una foto. Firmarán el tratado de Barcelona. Elevan la relación bilateral incluso previendo</p>
+        <img src="/img/foto1.jpg" alt="" class="img-fluid">
         </div>
         <div class="carousel-item">
-          <p>Consulta las últimas noticias en España y en el mundo hoy, jueves 19 de enero de 2023. La actualidad nacional e internacional más destacada</p>
+          <img src="/img/foto2.jpg" alt="" class="img-fluid">
         </div>
         <div class="carousel-item">
-          <p>Noticias de hoy, jueves 19 de enero de 2023 ... Laura Díez respaldó la ley de ERC que burlaba el mínimo de enseñanza en castellano. Comunica </p>
+          <img src="/img/foto3.jpg" alt="" class="img-fluid">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -265,21 +293,22 @@
   </div>
   ----------->
   <div class="container mt-5 tipografia2">
-    <div class="row">
-      <div class="col-sm-4 text-center text-success">
+    <div class="row"> 
+      <div class="section-header text-center pb-5"> 
+        <h1>Programas</h1>
+      </div>
+     
+      <div class="col-sm-3 text-center text-dark">
         <div class="list-group" id="list-tab" role="tablist">
 
           <a class="list-group-item list-group-item-action " id="list-compra-list" data-bs-toggle="list" href="#list-compra" role="tab" controls="list-compra">
-           Tus compras</a>
+           Temporada 1</a>
   
           <a class="list-group-item list-group-item-action " id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" controls="list-home">
-          aitana</a>
+          Capitulo 1</a>
           <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" controls="list-profile">
-          ana mena</a>
-          <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" controls="list-messages">
-            mimi doblas</a>
-          <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" controls="list-settings">
-            belen aguilera</a>
+          Capitulo 2</a>
+         
         </div>
       
       <div class="row-cols text-lg-center">
@@ -289,10 +318,10 @@
   
             <div class="card" >
             <img src="../img/" class="card-img-top" alt="">
-            <div class="card-body">
-              <h5 class="card-title"> Lista</h5>
-              <p class="card-text">Inicia sesión con una cuenta Nintendo para descargar demos o programas gratuitos, o para comprar versiones descargables de juegos.</p>
-              <a href="https://www.nintendo.es/Juegos/Nintendo-Switch/MONSTER-HUNTER-RISE-1843169.html" class="btn btn-primary">Comprar</a>
+            <div class="card-body ">
+              <h5 class="card-title"> Temporada 1</h5>
+              <p class="card-text">La primera temporada de IES Mare Nostrum</p>
+              <a href="https://www.youtube.com/@colegiodeeconomistasdealicante" class="btn btn-primary">Ver</a>
             </div>
             </div>
   
@@ -303,9 +332,9 @@
             <div class="card" >
             <img src="../img/aitana.jpg" class="card-img-top" alt="">
             <div class="card-body">
-              <h5 class="card-title"> aitana</h5>
-              <p class="card-text">Inicia sesión con una cuenta Nintendo para descargar demos o programas gratuitos, o para comprar versiones descargables de juegos.</p>
-              <a href="https://www.nintendo.es/Juegos/Nintendo-Switch/MONSTER-HUNTER-RISE-1843169.html" class="btn btn-primary">Comprar</a>
+              <h5 class="card-title"> Aitana</h5>
+              <p class="card-text">La artista española conocida</p>
+              <a href="https://www.instagram.com/aitanax/?hl=es" class="btn btn-primary">Ver</a>
             </div>
             </div>
   
@@ -315,54 +344,29 @@
             <div class="card" >
               <img src="../img/ana.jpg" class="card-img-top" alt="">
               <div class="card-body">
-                <h5 class="card-title">ana mena</h5>
-                <p class="card-text">Inicia sesión con una cuenta Nintendo para descargar demos o programas gratuitos, o para comprar versiones descargables de juegos.</p>
-                <a href="https://www.nintendo.es/Juegos/Nintendo-Switch/Animal-Crossing-New-Horizons-1438623.html" class="btn btn-primary">Comprar</a>
+                <h5 class="card-title">Ana Mena</h5>
+                <p class="card-text">La artista española conocida</p>
+                <a href="https://www.instagram.com/anamenaoficial/?hl=es" class="btn btn-primary">Ver</a>
               </div>
           </div>
         </div>
-          <div class="tab-pane fade" id="list-messages" role="tabpanel" labelledby="list-messages-list">
-            <div class="card" >
-              <img src="../img/mimi.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">mimi doblas</h5>
-                <p class="card-text">Inicia sesión con una cuenta Nintendo para descargar demos o programas gratuitos, o para comprar versiones descargables de juegos.</p>
-                <a href="https://www.nintendo.es/Juegos/Programas-descargables-Nintendo-Switch/The-Witcher-3-Wild-Hunt-1909183.html" class="btn btn-primary">Comprar</a>
-              </div>
-  
-          </div>
-  
-        </div>
-          <div class="tab-pane fade" id="list-settings" role="tabpanel" labelledby="list-settings-list">
-            <div class="card" >
-              <img src="../img/belen.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">belen aguilera</h5>
-                <p class="card-text">Inicia sesión con una cuenta Nintendo para descargar demos o programas gratuitos, o para comprar versiones descargables de juegos.</p>
-                <a href="https://www.nintendo.es/Juegos/Nintendo-Switch/Pokemon-Mundo-misterioso-equipo-de-rescate-DX-1695693.html" class="btn btn-primary">Comprar</a>
-              </div>
-  
-          </div>
-  
-        </div>
+         
+         
         </div>
       </div>
       </div>
   
-      <div class="col-sm-4 text-center text-success">
+      <div class="col-sm-3 text-center text-dark">
         <div class="list-group" id="list-tab" role="tablist">
 
           <a class="list-group-item list-group-item-action " id="list-compra-list" data-bs-toggle="list" href="#list-compra" role="tab" controls="list-compra">
-           Tus compras</a>
+           Temporada 2</a>
   
-          <a class="list-group-item list-group-item-action " id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" controls="list-home">
-          aitana</a>
-          <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" controls="list-profile">
-          ana mena</a>
-          <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" controls="list-messages">
-            mimi doblas</a>
-          <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" controls="list-settings">
-            belen aguilera</a>
+          <a class="list-group-item list-group-item-action " id="list-capitulo1-list" data-bs-toggle="list" href="#list-capitulo1" role="tab" controls="list-home">
+          Capitulo 1</a>
+          <a class="list-group-item list-group-item-action" id="list-capitulo2-list" data-bs-toggle="list" href="#list-capitulo2" role="tab" controls="list-profile">
+          Capitulo 2</a>
+          
         </div>
       
       <div class="row-cols text-lg-center">
@@ -373,78 +377,54 @@
             <div class="card" >
             <img src="../img/" class="card-img-top" alt="">
             <div class="card-body">
-              <h5 class="card-title"> Lista</h5>
-              <p class="card-text">Inicia sesión con una cuenta Nintendo para descargar demos o programas gratuitos, o para comprar versiones descargables de juegos.</p>
-              <a href="https://www.nintendo.es/Juegos/Nintendo-Switch/MONSTER-HUNTER-RISE-1843169.html" class="btn btn-primary">Comprar</a>
+              <h5 class="card-title"> Temporada 2</h5>
+              <p class="card-text">La segunda temporada de IES Mare Nostrum</p>
+              <a href="https://www.youtube.com/@colegiodeeconomistasdealicante" class="btn btn-primary">Ver</a>
             </div>
             </div>
   
             </div>
   
-          <div class="tab-pane fade" id="list-home" role="tabpanel" labelledby="list-home-list">
+          <div class="tab-pane fade" id="list-capitulo1" role="tabpanel" labelledby="list-capitulo1-list">
   
             <div class="card" >
-            <img src="../img/aitana.jpg" class="card-img-top" alt="">
+            <img src="../img/mimi.jpg" class="card-img-top" alt="">
             <div class="card-body">
-              <h5 class="card-title"> aitana</h5>
-              <p class="card-text">Inicia sesión con una cuenta Nintendo para descargar demos o programas gratuitos, o para comprar versiones descargables de juegos.</p>
-              <a href="https://www.nintendo.es/Juegos/Nintendo-Switch/MONSTER-HUNTER-RISE-1843169.html" class="btn btn-primary">Comprar</a>
+              <h5 class="card-title"> Lola Indigo</h5>
+              <p class="card-text">La artista española conocida</p>
+              <a href="#" class="btn btn-primary">Ver</a>
             </div>
             </div>
   
   
           </div>
-          <div class="tab-pane fade" id="list-profile" role="tabpanel" labelledby="list-profile-list">
-            <div class="card" >
-              <img src="../img/ana.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">ana mena</h5>
-                <p class="card-text">Inicia sesión con una cuenta Nintendo para descargar demos o programas gratuitos, o para comprar versiones descargables de juegos.</p>
-                <a href="https://www.nintendo.es/Juegos/Nintendo-Switch/Animal-Crossing-New-Horizons-1438623.html" class="btn btn-primary">Comprar</a>
-              </div>
-          </div>
-        </div>
-          <div class="tab-pane fade" id="list-messages" role="tabpanel" labelledby="list-messages-list">
-            <div class="card" >
-              <img src="../img/mimi.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">mimi doblas</h5>
-                <p class="card-text">Inicia sesión con una cuenta Nintendo para descargar demos o programas gratuitos, o para comprar versiones descargables de juegos.</p>
-                <a href="https://www.nintendo.es/Juegos/Programas-descargables-Nintendo-Switch/The-Witcher-3-Wild-Hunt-1909183.html" class="btn btn-primary">Comprar</a>
-              </div>
-  
-          </div>
-  
-        </div>
-          <div class="tab-pane fade" id="list-settings" role="tabpanel" labelledby="list-settings-list">
+          <div class="tab-pane fade" id="list-capitulo2" role="tabpanel" labelledby="list-capitulo2-list">
             <div class="card" >
               <img src="../img/belen.jpg" class="card-img-top" alt="">
               <div class="card-body">
-                <h5 class="card-title">belen aguilera</h5>
-                <p class="card-text">Inicia sesión con una cuenta Nintendo para descargar demos o programas gratuitos, o para comprar versiones descargables de juegos.</p>
-                <a href="https://www.nintendo.es/Juegos/Nintendo-Switch/Pokemon-Mundo-misterioso-equipo-de-rescate-DX-1695693.html" class="btn btn-primary">Comprar</a>
+                <h5 class="card-title">Belen Aguilera</h5>
+                <p class="card-text">La artista española conocida</p>
+                <a href="#" class="btn btn-primary">Ver</a>
               </div>
-  
           </div>
+        </div>
+ 
+        </div>
+        </div>
+      </div>
+   
   
-        </div>
-        </div>
-      </div>
-      </div>
-      <div class="col-sm-4">
+      <div class="col-sm-3  text-center text-dark">
         <div class="list-group" id="list-tab" role="tablist">
 
           <a class="list-group-item list-group-item-action " id="list-comp-list" data-bs-toggle="list" href="#list-comp" role="tab" controls="ist-comp">
-           Tus compras</a>
+           Temporada 3</a>
   
           <a class="list-group-item list-group-item-action " id="list-li-list" data-bs-toggle="list" href="#list-li" role="tab" controls="list-li">
-          aitana</a>
+          Capitulo 1</a>
           <a class="list-group-item list-group-item-action" id="list-prof-list" data-bs-toggle="list" href="#list-prof" role="tab" controls="list-prof">
-          ana mena</a>
-          <a class="list-group-item list-group-item-action" id="list-messa-list" data-bs-toggle="list" href="#list-messa" role="tab" controls="list-messa">
-            mimi doblas</a>
-          <a class="list-group-item list-group-item-action" id="list-sett-list" data-bs-toggle="list" href="#list-sett" role="tab" controls="list-sett">
-            belen aguilera</a>
+         Capitulo 2</a>
+          
         </div>
       
       <div class="row-cols text-lg-center">
@@ -455,9 +435,9 @@
             <div class="card" >
             <img src="../img/" class="card-img-top" alt="">
             <div class="card-body">
-              <h5 class="card-title"> Lista</h5>
-              <p class="card-text">Inicia sesión con una cuenta Nintendo para descargar demos o programas gratuitos, o para comprar versiones descargables de juegos.</p>
-              <a href="https://www.nintendo.es/Juegos/Nintendo-Switch/MONSTER-HUNTER-RISE-1843169.html" class="btn btn-primary">Comprar</a>
+              <h5 class="card-title"> Temporada 3</h5>
+              <p class="card-text">La tercera temporada de IES Mare Nostrum</p>
+              <a href="https://www.youtube.com/@colegiodeeconomistasdealicante" class="btn btn-primary">Ver</a>
             </div>
             </div>
   
@@ -466,11 +446,11 @@
           <div class="tab-pane fade" id="list-li" role="tabpanel" labelledby="list-li-list">
   
             <div class="card" >
-            <img src="../img/aitana.jpg" class="card-img-top" alt="">
+            <img src="../img/mimi.jpg" class="card-img-top" alt="">
             <div class="card-body">
-              <h5 class="card-title"> aitana</h5>
-              <p class="card-text">Inicia sesión con una cuenta Nintendo para descargar demos o programas gratuitos, o para comprar versiones descargables de juegos.</p>
-              <a href="https://www.nintendo.es/Juegos/Nintendo-Switch/MONSTER-HUNTER-RISE-1843169.html" class="btn btn-primary">Comprar</a>
+              <h5 class="card-title"> David Broncano</h5>
+              <p class="card-text">Presentador de La Resistencia</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
             </div>
             </div>
   
@@ -480,54 +460,86 @@
             <div class="card" >
               <img src="../img/ana.jpg" class="card-img-top" alt="">
               <div class="card-body">
-                <h5 class="card-title">ana mena</h5>
-                <p class="card-text">Inicia sesión con una cuenta Nintendo para descargar demos o programas gratuitos, o para comprar versiones descargables de juegos.</p>
-                <a href="https://www.nintendo.es/Juegos/Nintendo-Switch/Animal-Crossing-New-Horizons-1438623.html" class="btn btn-primary">Comprar</a>
+                <h5 class="card-title">Jordi Wild</h5>
+                <p class="card-text">Youtuber</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
               </div>
           </div>
         </div>
-          <div class="tab-pane fade" id="list-messages" role="tabpanel" labelledby="list-messages-list">
-            <div class="card" >
-              <img src="../img/mimi.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">mimi doblas</h5>
-                <p class="card-text">Inicia sesión con una cuenta Nintendo para descargar demos o programas gratuitos, o para comprar versiones descargables de juegos.</p>
-                <a href="https://www.nintendo.es/Juegos/Programas-descargables-Nintendo-Switch/The-Witcher-3-Wild-Hunt-1909183.html" class="btn btn-primary">Comprar</a>
-              </div>
-  
-          </div>
-  
-        </div>
-          <div class="tab-pane fade" id="list-settings" role="tabpanel" labelledby="list-settings-list">
-            <div class="card" >
-              <img src="../img/belen.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">belen aguilera</h5>
-                <p class="card-text">Inicia sesión con una cuenta Nintendo para descargar demos o programas gratuitos, o para comprar versiones descargables de juegos.</p>
-                <a href="https://www.nintendo.es/Juegos/Nintendo-Switch/Pokemon-Mundo-misterioso-equipo-de-rescate-DX-1695693.html" class="btn btn-primary">Comprar</a>
-              </div>
-  
-          </div>
-  
+        
         </div>
         </div>
       </div>
+      
+      
+      <div class="col-sm-3 text-center text-dark">
+        <div class="list-group" id="list-tab" role="tablist">
+
+          <a class="list-group-item list-group-item-action " id="list-compra-list" data-bs-toggle="list" href="#list-compra" role="tab" controls="list-compra">
+           Temporada 4</a>
+  
+          <a class="list-group-item list-group-item-action " id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" controls="list-home">
+          Capitulo 1</a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" controls="list-profile">
+          Capitulo 2</a>
+         
+        </div>
+      
+      <div class="row-cols text-lg-center">
+        <div class="tab-content" id="nav-tabContent">
+  
+          <div class="tab-pane fade show active" id="list-compra" role="tabpanel" labelledby="list-compra-list">
+  
+            <div class="card" >
+            <img src="../img/" class="card-img-top" alt="">
+            <div class="card-body ">
+              <h5 class="card-title"> Temporada 4</h5>
+              <p class="card-text">La primera temporada de IES Mare Nostrum</p>
+              <a href="https://www.youtube.com/@colegiodeeconomistasdealicante" class="btn btn-primary">Ver</a>
+            </div>
+            </div>
+  
+            </div>
+  
+          <div class="tab-pane fade" id="list-home" role="tabpanel" labelledby="list-home-list">
+  
+            <div class="card" >
+            <img src="../img/aitana.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title"> Aitana</h5>
+              <p class="card-text">La artista española conocida</p>
+              <a href="https://www.instagram.com/aitanax/?hl=es" class="btn btn-primary">Ver</a>
+            </div>
+            </div>
+  
+  
+          </div>
+          <div class="tab-pane fade" id="list-profile" role="tabpanel" labelledby="list-profile-list">
+            <div class="card" >
+              <img src="../img/ana.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Ana Mena</h5>
+                <p class="card-text">La artista española conocida</p>
+                <a href="https://www.instagram.com/anamenaoficial/?hl=es" class="btn btn-primary">Ver</a>
+              </div>
+          </div>
+        </div>
+         
+         </div>
+        </div>
+      </div>
+      </div>
+    </div>
     </div> 
    
-  
-  </div>
-  
-  </div>
-
-
 
 <!---------- personas ------------------->
  <section id="team" class="team section-padding">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="section-header text-center pb-5">
-        <h2>Hola</h2>
+        <div class="section-header text-center pb-5 pt-5">
+        <h2>Presentadores</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus totam et asperiores porro nesciunt voluptas dolor amet alias veniam necessitatibus unde, molestiae sint, a saepe hic illum laboriosam impedit delectus.</p>
       </div>
     </div>
@@ -538,7 +550,7 @@
         <div class="card text-center">
         <div class="card-body">
           <img src="../img/team-1.jpg" alt="" class="img-fluid rounded-circle">
-          <h3 class="card-title py-2">Ainhoa Izquierdo</h3>
+          <h3 class="card-title py-2">Jose Manuel</h3>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rem laborum fugiat. Nam maiores modi quae aliquam, consequatur ullam veritatis commodi deleniti eum recusandae hic aut sapiente mollitia fugit ipsam.</p>
 
           <p class="socials">
@@ -555,7 +567,7 @@
         <div class="card text-center">
         <div class="card-body">
           <img src="../img/team-2.jpg" alt="" class="img-fluid rounded-circle">
-          <h3 class="card-title py-2">Ainhoa Izquierdo</h3>
+          <h3 class="card-title py-2">Rodrigo Perez</h3>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rem laborum fugiat. Nam maiores modi quae aliquam, consequatur ullam veritatis commodi deleniti eum recusandae hic aut sapiente mollitia fugit ipsam.</p>
 
           <p class="socials">
@@ -572,7 +584,7 @@
         <div class="card text-center">
         <div class="card-body">
           <img src="../img/team-3.jpg" alt="" class="img-fluid rounded-circle">
-          <h3 class="card-title py-2">Ainhoa Izquierdo</h3>
+          <h3 class="card-title py-2">Mimi Doblas</h3>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rem laborum fugiat. Nam maiores modi quae aliquam, consequatur ullam veritatis commodi deleniti eum recusandae hic aut sapiente mollitia fugit ipsam.</p>
 
           <p class="socials">
@@ -590,7 +602,7 @@
         <div class="card text-center">
         <div class="card-body">
           <img src="../img/team-4.jpg" alt="" class="img-fluid rounded-circle">
-          <h3 class="card-title py-2">Ainhoa Izquierdo</h3>
+          <h3 class="card-title py-2">Mari Cruz</h3>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rem laborum fugiat. Nam maiores modi quae aliquam, consequatur ullam veritatis commodi deleniti eum recusandae hic aut sapiente mollitia fugit ipsam.</p>
 
           <p class="socials">
@@ -612,8 +624,8 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="section-header text-center pb-5">
-          <h2>Contactanos</h2>
+        <div class="section-header text-center pt-4">
+          <h2>Formulario Contactanos</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi perspiciatis cum necessitatibus. Consequuntur quos vel distinctio! Tempore, repellendus quidem. Fugiat rerum harum facilis alias, et odit maiores accusantium possimus similique.</p>
         </div>
       </div>
@@ -625,22 +637,17 @@
       <div class="row">
         <div class="col-md-12">
           <div class="mb-3">
-            <input type="text" class="form-control" required placeholder="tu nombre">
+            <input type="text" class="form-control" required placeholder="Colectivo: alumno, profesor, padre, otros">
           </div>
         </div>
         <div class="col-md-12">
           <div class="mb-3">
-            <input type="email" class="form-control" required placeholder="tu email">
+            <input type="email" class="form-control" required placeholder="Email de contacto">
           </div>
         </div>
         <div class="col-md-12">
           <div class="mb-3">
-            <input type="text" class="form-control" required placeholder="tu nombre">
-          </div>
-        </div>
-        <div class="col-md-12">
-          <div class="mb-3">
-            <textarea rows="3" required class="form-control" placeholder="escribe"></textarea>
+            <textarea rows="3" required class="form-control" placeholder="Motivos"></textarea>
           </div>
           
         </div>
@@ -653,10 +660,15 @@
  </section>
 
 <!---------- footer ------------------->
-<footer class="bg-dark p-2 text-center">
-  <div class="container">
-    <p class="text-white">All Right Reserved Ainhoa Izquierdo</p>
-  </div>
+<footer class="py-3 my-4 bg-dark">
+  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="bi bi-youtube"></i></a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="bi bi-instagram"></i></a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="bi bi-twitter"></i></a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="bi bi-twitch"></i></a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="bi bi-linkedin"></i></a></li>
+  </ul>
+  <p class="text-center text-muted">© 2022 Mare Nostrum, Inc Ainhoa Izquierdo</p>
 </footer>
     
 </body>
