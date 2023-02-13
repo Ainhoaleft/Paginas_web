@@ -209,6 +209,16 @@ background: linear-gradient(90deg, rgba(138,186,233,1) 11%, rgba(146,145,232,1) 
   
 }
 
+.form{
+  background: rgb(138,172,233);
+  background: linear-gradient(90deg, rgba(138,172,233,1) 5%, rgba(145,232,221,1) 38%, rgba(65,198,237,1) 62%, rgba(55,165,214,1) 81%, rgba(0,5,255,1) 100%);
+}
+
+.ancho{
+  width: 100px;
+  height: 100px;
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
