@@ -78,6 +78,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -87,10 +88,38 @@
 }
 
 *{
-  font-family: 'Archivo Black', sans-serif;
+
   font-family: 'Libre Caslon Text', serif;
+  font-family: 'Source Serif Pro', serif;
 }
 
+.fa-lg{
+  font-size:24px;
+}
+
+.cabecera{
+  background: rgb(156,196,250);
+  background: linear-gradient(90deg, rgba(156,196,250,1) 5%, rgba(135,190,233,1) 30%, rgba(144,195,245,1) 61%, rgba(100,184,235,1) 81%, rgba(131,212,236,1) 100%);
+}
+
+.carrusel{
+  width: 100%;
+  background: rgb(0, 0, 0, 0.7);
+}
+
+.seccion{
+  background: rgb(85,147,231);
+  background: linear-gradient(90deg, rgba(85,147,231,1) 5%, rgba(63,118,212,1) 30%, rgba(50,110,227,1) 61%, rgba(52,128,219,1) 81%, rgba(131,167,236,1) 100% 0.7);
+}
+
+.program{
+  background: rgb(119,50,8);
+background: linear-gradient(90deg, rgba(119,50,8,1) 5%, rgba(212,125,63,1) 30%, rgba(227,124,50,1) 61%, rgba(227,143,83,1) 81%, rgba(207,60,7,1) 100%);
+}
+
+.p{
+  font-size: 19px;
+}
 /*
 .section-padding{
   padding: 100px 0;
@@ -203,7 +232,6 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
 background: rgb(138,186,233);
 background: linear-gradient(90deg, rgba(138,186,233,1) 11%, rgba(146,145,232,1) 38%, rgba(65,135,237,1) 62%, rgba(55,162,214,1) 81%, rgba(0,212,255,1) 100%);
   
