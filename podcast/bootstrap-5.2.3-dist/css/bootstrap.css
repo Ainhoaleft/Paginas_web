@@ -104,7 +104,8 @@
 
 .carrusel{
   width: 100%;
-  background: rgb(0, 0, 0, 0.7);
+  background: rgb(15,8,124);
+  background: linear-gradient(90deg, rgba(15,8,124,1) 0%, rgba(18,18,139,1) 47%, rgba(39,56,180,1) 100%);
 }
 
 .seccion{
@@ -117,76 +118,15 @@
 background: linear-gradient(90deg, rgba(119,50,8,1) 5%, rgba(212,125,63,1) 30%, rgba(227,124,50,1) 61%, rgba(227,143,83,1) 81%, rgba(207,60,7,1) 100%);
 }
 
+.fondo{
+  background: rgb(15,8,124);
+background: linear-gradient(90deg, rgba(15,8,124,1) 0%, rgba(18,18,139,1) 47%, rgba(39,56,180,1) 100%);
+}
+
 .p{
-  font-size: 19px;
+  font-size: 17px;
+  font-family: 'Libre Caslon Text', serif;
 }
-/*
-.section-padding{
-  padding: 100px 0;
-}
-
-.carousel-item{
-  height: 100vh;
-  min-height: 300px;
-}
-
-.carousel-caption{
- bottom: 220px;
- z-index: 2;
-}
-
-.carousel-caption{
-  font-size: 45px;
-  text-transform: uppercase;
-  letter-spacing: 25px;
-  margin-top: 25px;
-}
-
-.carousel-caption p{
-  width: 60%;
-  margin: auto;
-  font-size: 18px;
-  line-height: 1.9;
-}
-
-.carousel-inner::before{
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0,0,0,0.7);
-  z-index:1;
-}
-
-.navbar-nav a{
-  font-size: 15px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-.navbar-light .navbar-brand{
-  color:#000;
-  font-size: 25px;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-.navbar-light .navbar-brand,
- .navbar-light .navbar-brand:hover{
-  color: #000;
-}
-
-.navbar-light .navbar-nav .nav-link{
-  color: #000;
-}
-
-.w-100{
-  width: 100vh;
-}
-*/
 
 .slide{
  margin: 20px 20px 20px 20px;
