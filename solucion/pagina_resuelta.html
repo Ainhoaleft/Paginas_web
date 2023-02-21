@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        ORDENADORES --LISTADO---
+    </title>
+</head>
+
+<body>
+    <div id="aplicacion">
+        <div id="controlesprincipales">
+            
+            <button type="button" id="anyadepc">
+              Añadir pc
+            </button>
+            <button type="button" id="anyadepcForm">
+                Añadir pc con formulario
+              </button>
+            <button type="button" id="borra">
+                Borrar pc
+              </button>
+
+              <br><br>
+
+          </div>
+
+        <div id="listadopc">
+        </div>
+    </div>
+
+    <!--
+             TODO: Cargar el script examen.js
+
+        -->
+    <script src="examRes.js" type="module"></script>
+    
+    <template id="formulario-template">
+        <form>
+            <div class="form-control">
+                <label for="marca">Marca</label>
+                <input type="text" name="marca" id="marca">
+            </div>
+            <div class="form-control">
+                <label for="modelo">Modelo</label>
+                <input type="text" name="modelo" id="modelo">
+            </div>
+            <div class="form-control">
+                <label for="ram">Ram</label>
+                <input type="text" name="ram" id="ram">
+            </div>
+            <div class="form-control">
+                <label for="disco">Disco</label>
+                <input type="text" name="disco" id="disco">
+            </div>
+            <div class="form-control">
+                <label for="pulgadas">Pulgadas</label>
+                <input type="text" name="pulgadas" id="pulgadas">
+            </div>
+            <div class="form-control">
+                <label for="autonomia">Autonomía</label>
+                <input type="text" name="autonomia" id="autonomia">
+            </div>
+            <br>
+
+            <button type="submit">Enviar</button>
+            <button class="cancelar" type="button">Cancelar</button>
+        </form>
+    </template>
+
+</body>
+
+</html>
